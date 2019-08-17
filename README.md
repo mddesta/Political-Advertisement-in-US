@@ -1,1 +1,0 @@
-# Political-Advertisement-in-US
