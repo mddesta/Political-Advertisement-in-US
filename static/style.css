@@ -16,6 +16,9 @@ body {
     align-items: stretch;
     perspective: 1500px;
 }
+h6{
+    font-display: bolder;
+}
 
 /* SIDEBAR STYLE */
 
