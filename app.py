@@ -1,6 +1,5 @@
 from flask import Flask, render_template, redirect,current_app
 from flask_pymongo import PyMongo
-import scrape_ads
 
 app = Flask(__name__)
 

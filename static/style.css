@@ -1,5 +1,5 @@
 body {
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 .navbar-text {
     color:#3b5998;
@@ -18,6 +18,10 @@ body {
 }
 h6{
     font-weight: bolder;
+}
+p{
+    font-family: Trebuchet ;
+    color:#494949;
 }
 
 /* SIDEBAR STYLE */
@@ -61,6 +65,7 @@ h6{
 #sidebar ul li a:hover {
     color: #3b5998;
     background: #fff;
+    text-decoration: none;
 }
 
 a[data-toggle="collapse"] {
