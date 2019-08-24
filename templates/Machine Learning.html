@@ -75,13 +75,13 @@
                 to differentiate between organic ads and Russian Ads. We used the Facebook API data and the IRA data to
                 train the program.
             </p>
-            <img src="{{url_for('static', filename='Chart_adlength.PNG')}}" Style="height:500px"><br>
+            <img src="{{url_for('static', filename='Chart_adlength.png')}}" Style="height:500px"><br>
             <p>
                 This chart shows that in general, the real Facebook ads were longer (had more words in each ad). This
                 makes it easier for the machine learning model to identify the real ads from the fake ones presented by
                 the Internet Research Agency (otherwise known as the “Russian troll farm”).
             </p><br>
-            <img src="{{url_for('static', filename='Chart_punctuation.PNG')}}" Style="height:500px"><br>
+            <img src="{{url_for('static', filename='Chart_punctuation.png')}}" Style="height:500px"><br>
             <p>
                 This chart shows what percentage of each ad was made up of any of the following punctuation marks:
                 !“#$%&\‘()*+,-./:;<=>?@[\\]^_`{|}~
@@ -94,7 +94,7 @@
                 ads, as the ads from this dataset were created in 2015-2017, whereas the ads pulled through the
                 Facebook API only go back through 2018.
             </p><br>
-            <img src="{{url_for('static', filename='Confusion_matrix.PNG')}}" Style="height:500px"><br>
+            <img src="{{url_for('static', filename='Confusion_matrix.png')}}" Style="height:500px"><br>
             <p>
                 The confusion matrix visually represents the success of our model at distinguishing ‘fake’ (IRA-created)
                 Facebook ads from real Facebook ads that were accessed through their API. The accuracy of our model was
