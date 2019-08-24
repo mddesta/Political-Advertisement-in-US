@@ -13,7 +13,7 @@ def home():
 #Adding the other pages
 @app.route("/findings")
 def findings():
-    return render_template("Project Information.html")
+    return render_template("Findings.html")
 
 @app.route("/foreigninfluence")
 def foreigninfluence():
