@@ -1,5 +1,5 @@
 body {
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 .navbar-text {
     color:#3b5998;
@@ -17,7 +17,11 @@ body {
     perspective: 1500px;
 }
 h6{
-    font-display: bolder;
+    font-weight: bolder;
+}
+p{
+    font-family: Trebuchet ;
+    color:#494949;
 }
 
 /* SIDEBAR STYLE */
@@ -61,6 +65,7 @@ h6{
 #sidebar ul li a:hover {
     color: #3b5998;
     background: #fff;
+    text-decoration: none;
 }
 
 a[data-toggle="collapse"] {
@@ -130,9 +135,7 @@ ul.CTAs a {
 }
 
 
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
+/* Animation */
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;

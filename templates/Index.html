@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Polical Advertisement on Facebook</title>
+    <!-- Adding Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- adding nav bar styling -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}" />
+</head>
+
+<body>
+    <!-- Adding sidebar toggle button-->
+    <nav class="navbar bg-light fixed-top" style="padding-top: 0px; padding-bottom: 0px;">
+        <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="navbar-btn ">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="navbar-text text-right">
+                <h3 class="font-weight-bold">Political Ads on <img class="navbar-brand"
+                        src="https://www.freesoftwarefiles.com/wp-content/uploads/2017/10/Facebook-Desktop-Version-Free-Download.png"
+                        style="width: 8%"></h3>
+            </span>
+    </nav>
+    <!-- End of button -->
+    <div class="wrapper">
+        <!-- Adding sidebar -->
+        <nav id="sidebar" class="bg-dark" style="margin-top:100px">
+            <div class="sidebar-header">
+                <h2><strong>Analysis and Visualization</strong></h3>
+            </div>
+            <ul class="list-unstyled components font-weight-bold">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/projectInformation">Project Information</a>
+                </li>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">Plots</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Plot 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Plot 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Plot 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Targeted advertisement</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Maps</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Map 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Map 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Map 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/foreigninfluence">Foreign Influence</a>
+                </li>
+
+            </ul>
+            <ul class="list-unstyled CTAs ">
+                <li>
+                    <a href="https://github.com/mddesta/Political-Advertisement-in-US"
+                        class="btn btn-lg btn-light font-weight-bold">Github Repository</a>
+                </li>
+                <li>
+                    <a href="/aboutus" class="btn btn-lg btn-light font-weight-bold">About Us</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End of sidebar -->
+        <!-- Page Content -->
+        <div id="content" style="margin-top:100px">
+            <!-- Adding Images -->
+            <div class="container">
+                <div class="row">
+                    <div class="card" style="margin-right: 5px;border:none">
+                        <img class="card-body" src="{{url_for('static', filename='Trump Ad.PNG')}}"
+                            style="height:400px; width:auto;padding-bottom: 0px;padding-left: 0px;padding-top: 0px;padding-right: 0px;"
+                            alt="Trump Ad">
+                    </div>
+                    <div class="card" style="margin-right: 5px;border:none">
+                        <img class="card-body" src="{{url_for('static', filename='Biden Ad.PNG')}}"
+                            style="height:400px;padding-bottom: 0px;padding-left: 0px;padding-top: 0px;padding-right: 0px;"
+                            alt="Biden Ad">
+                    </div>
+                    <div class="card" style="margin-right: 5px;border:none">
+                        <img class="card-body" src="{{url_for('static', filename='Bernie Ad.PNG')}}"
+                            style="height:400px;padding-bottom: 0px;padding-left: 0px;padding-top: 0px;padding-right: 0px;"
+                            alt="Bernie Ad">
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <!-- Adding context -->
+            <p>
+                If you are one of the 2.7 billion active users of the social media platform, you probably have come
+                across ads like those listed above.
+                The 2020 election cycle has made each one of us targets of such advertisements which have become the
+                most effective tool for most campaigns.
+                Given the scrutiny that the company is under and our own curiosity, we decided to analyze data we found
+                on Facebook political ads in the US.
+
+            </p>
+            <!-- Adding Scapped info -->
+            <p>
+                Since May of 2018 Facebook has provided more insight to the political ads running from all it’s
+                platforms
+                This is partly due to pressure building from users, NGOs, and governmental organizations. Below are the
+                live feed numbers from this to this <a href="https://www.facebook.com/ads/library/report/"
+                    target="blank_">Ad Library</a> as of 8/23/2019.
+
+            </p>
+            <div class="row text-white">
+                <div class="card" style="background: #6bcebb; margin-left: 100px; margin-right:50px;padding-right:10px; padding-left:10px; padding-top: 10px">
+                    <p class="card-title">Total ads: 4,578,632</p>
+                </div>
+                <div class="card" style="background: #6bcebb; margin-left: 100px; margin-right:50px; padding-right:10px; padding-left:10px; padding-top: 10px">
+                    <p class="card-title">Total Amount spent: $744,617,702</p>
+                </div>
+            </div>
+
+    </div>
+    <!-- End of page content -->
+    </div>
+    <!-- Adding Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Ading navbar js -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
