@@ -31,7 +31,7 @@
     <!-- End of button -->
     <div class="wrapper">
         <!-- Adding sidebar -->
-        <nav id="sidebar" class="bg-dark" style="margin-top:100px">
+        <nav id="sidebar" class="dark" style="margin-top:100px">
             <div class="sidebar-header">
                 <h2><strong>Analysis and Visualization</strong></h3>
             </div>
@@ -49,6 +49,7 @@
                     <a href="/machineLearning">Machine Learning</a>
                 </li>
 
+                </li>
                 <li>
                     <a href="/projectInformation">Project Information</a>
                 </li>
@@ -68,55 +69,46 @@
         <!-- End of sidebar -->
         <!-- Page Content -->
         <div id="content" style="margin-top:100px">
-            <!-- Adding Images -->
-            <div class="container">
-                <div class="row">
-                    <div class="card" style="margin-right: 3px;border:none">
-                        <img class="card-body" src="{{url_for('static', filename='Trump Ad.PNG')}}"
-                            style="height:400px; width:auto;padding-bottom: 0px;padding-left: 0px;padding-top: 0px;padding-right: 0px;"
-                            alt="Trump Ad">
-                    </div>
-                    <div class="card" style="margin-right: 3px;border:none">
-                        <img class="card-body" src="{{url_for('static', filename='Biden Ad.PNG')}}"
-                            style="height:400px;padding-bottom: 0px;padding-left: 0px;padding-top: 0px;padding-right: 0px;"
-                            alt="Biden Ad">
-                    </div>
-                    <div class="card" style="margin-right: 3px;border:none">
-                        <img class="card-body" src="{{url_for('static', filename='Bernie Ad.PNG')}}"
-                            style="height:400px;padding-bottom: 0px;padding-left: 0px;padding-top: 0px;padding-right: 0px;"
-                            alt="Bernie Ad">
-                    </div>
-                </div>
-            </div>
-            <br><br>
-            <!-- Adding context -->
+            <h3>Machine Learning</h3> <br><br>
             <p>
-                If you are one of the 2.7 billion active users of the social media platform, you probably have come
-                across ads like those listed above.
-                The 2020 election cycle has made each one of us targets of such advertisements which have become the
-                most effective tool for most campaigns.
-                Given the scrutiny that the company is under and our own curiosity, we decided to analyze data we found
-                on Facebook political ads in the US.
-
+                With the upcoming election in mind, ourteam wanted to build a Machine Learning tool that would allow us
+                to differentiate between organic ads and Russian Ads. We used the Facebook API data and the IRA data to
+                train the program.
+            </p>
+            <img src="{{url_for('static', filename='Chart_adlength.PNG')}}" Style="height:500px"><br>
+            <p>
+                This chart shows that in general, the real Facebook ads were longer (had more words in each ad). This
+                makes it easier for the machine learning model to identify the real ads from the fake ones presented by
+                the Internet Research Agency (otherwise known as the “Russian troll farm”).
+            </p><br>
+            <img src="{{url_for('static', filename='Chart_punctuation.PNG')}}" Style="height:500px"><br>
+            <p>
+                This chart shows what percentage of each ad was made up of any of the following punctuation marks:
+                !“#$%&\‘()*+,-./:;<=>?@[\\]^_`{|}~
             </p>
             <p>
-                Since May of 2018 Facebook has provided more insight to the political ads running from all it’s
-                platforms
-                This is partly due to pressure building from users, NGOs, and governmental organizations. Below are the
-                live feed numbers from this to this <a href="https://www.facebook.com/ads/library/report/"
-                    target="blank_">Ad Library</a> as of 8/23/2019.
-
+                As you can see, there is almost no punctuation used in the ads created by the IRA. This could
+                perhaps represent a deficiency in the data set, as the data was compiled into PDF files which were
+                then parsed to create one directory of all of the points of information on each PDF (ad text,
+                creation date, impressions, etc). There could also be improved reporting of the text of Facebook
+                ads, as the ads from this dataset were created in 2015-2017, whereas the ads pulled through the
+                Facebook API only go back through 2018.
+            </p><br>
+            <img src="{{url_for('static', filename='Confusion_matrix.PNG')}}" Style="height:500px"><br>
+            <p>
+                The confusion matrix visually represents the success of our model at distinguishing ‘fake’ (IRA-created)
+                Facebook ads from real Facebook ads that were accessed through their API. The accuracy of our model was
+                99.8%, which means that it was able to successfully distinguish between real or fake ads in 99.8% of the
+                test data fed into the model. There were initially over 3400 ads used from the IRA, and over 4400 which
+                were pulled through the Facebook API. The majority were used to train the machine learning model on the
+                difference between the two, and when tested, the model correctly labeled 873 out of 876 IRA ads and 702
+                out of 702 ads collected through the API.
+            </p><br>
+            <p>
+                With more time, our team would like to integrate this to our website and allow users to enter ads and
+                find out whether they were IRA or organic ads.
             </p>
-            <div class="row text-white">
-                <div class="card"
-                    style="background: #6bcebb; margin-left: 100px; margin-right:50px;padding-right:10px; padding-left:10px; padding-top: 10px">
-                    <p class="card-title">Total ads: 4,578,632</p>
-                </div>
-                <div class="card"
-                    style="background: #6bcebb; margin-left: 100px; margin-right:50px; padding-right:10px; padding-left:10px; padding-top: 10px">
-                    <p class="card-title">Total Amount spent: $744,617,702</p>
-                </div>
-            </div>
+
 
         </div>
         <!-- End of page content -->

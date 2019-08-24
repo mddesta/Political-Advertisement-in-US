@@ -11,6 +11,18 @@ def home():
     return render_template("Index.html",)
 
 #Adding the other pages
+@app.route("/findings")
+def findings():
+    return render_template("Project Information.html")
+
+@app.route("/foreigninfluence")
+def foreigninfluence():
+    return render_template("Foreign Influence.html")
+
+@app.route("/machineLearning")
+def machineLearning():
+    return render_template("Machine Learning.html")
+
 @app.route("/projectInformation")
 def projectInformation():
     return render_template("Project Information.html")
@@ -19,9 +31,7 @@ def projectInformation():
 def aboutus():
     return render_template("About Us.html")
 
-@app.route("/foreigninfluence")
-def foreigninfluence():
-    return render_template("Foreign Influence.html")
+
 
 if __name__ == "__main__": 
     app.run(debug=False)

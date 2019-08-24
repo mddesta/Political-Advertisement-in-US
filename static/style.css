@@ -18,10 +18,12 @@ body {
 }
 h6{
     font-weight: bolder;
+    font-size: 2rem;
 }
 p{
     font-family: Trebuchet ;
     color:#494949;
+    font-size: 1.5rem;
 }
 
 /* SIDEBAR STYLE */
@@ -66,18 +68,6 @@ p{
     color: #3b5998;
     background: #fff;
     text-decoration: none;
-}
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
 }
 
 ul.CTAs {
