@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Polical Advertisement on Social Media in the US</title>
+    <title>Polical Advertisement on Facebook</title>
     <!-- Adding Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,7 +15,7 @@
 
 <body>
     <!-- Adding sidebar toggle button-->
-    <nav class="navbar bg-light fixed-top">
+    <nav class="navbar bg-light fixed-top" style="padding-top: 0px; padding-bottom: 0px;">
         <div class="container-fluid">
             <button type="button" id="sidebarCollapse" class="navbar-btn ">
                 <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,10 @@
             </div>
             <ul class="list-unstyled components font-weight-bold">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/projectInformation">Project Information</a>
                 </li>
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
@@ -74,9 +77,7 @@
                 <li>
                     <a href="/foreigninfluence">Foreign Influence</a>
                 </li>
-                <li>
-                    <a href=#>Project Information</a>
-                </li>
+
             </ul>
             <ul class="list-unstyled CTAs ">
                 <li>
@@ -91,27 +92,54 @@
         <!-- End of sidebar -->
         <!-- Page Content -->
         <div id="content" style="margin-top:100px">
+            <!-- Adding Images -->
             <div class="container">
                 <div class="row">
-                    <div class=" cd-lg-4 cd-md-4 cd-sm-6">
-                        <div class="card">
-                            <img class="card-body" src="{{url_for('static', filename='Trump Ad.PNG')}}"
-                                style="height:400px;" alt="Trump Ad">
-                        </div>
+                    <div class="card" style="margin-right: 5px">
+                        <img class="card-body" src="{{url_for('static', filename='Trump Ad.PNG')}}"
+                            style="height:400px; width:auto;padding-bottom: 0px;padding-left: 0px;padding-top: 0px;padding-right: 0px;"
+                            alt="Trump Ad">
                     </div>
-                    <div class=" cd-lg-4 cd-md-4 cd-sm-6">
-                        <div class="card">
-                            <img class="card-body" src="{{url_for('static', filename='Biden Ad.PNG')}}"
-                                style="height:400px;" alt="Biden Ad">
-                        </div>
+                    <div class="card">
+                        <img class="card-body" src="{{url_for('static', filename='Biden Ad.PNG')}}"
+                            style="height:400px;padding-bottom: 0px;padding-left: 0px;padding-top: 0px;padding-right: 0px;"
+                            alt="Biden Ad">
                     </div>
-                    <div class=" cd-lg-4 cd-md-4 cd-sm-6">
-                        <div class="card">
-                            <img class="card-body" src="{{url_for('static', filename='Bernie Ad.PNG')}}"
-                                style="height:400px;" alt="Bernie Ad">
-                        </div>
+                    <div class="card">
+                        <img class="card-body" src="{{url_for('static', filename='Bernie Ad.PNG')}}"
+                            style="height:400px;padding-bottom: 0px;padding-left: 0px;padding-top: 0px;padding-right: 0px;"
+                            alt="Bernie Ad">
+                    </div>
                 </div>
             </div>
+            <p>
+                If you are one of the 2.7 billion active users of the social media platform, you probably have come
+                across ads like those listed above.
+                The 2020 election cycle has made each one of us targets of such advertisements which have become the
+                most effective tool for most campaigns.
+                Given the scrutiny that the company is under and our own curiosity, we decided to analyze data we found
+                on Facebook political ads in the US.
+
+            </p>
+            <!-- Adding Scapped info -->
+            <p>
+                    Since May of 2018 Facebook has provided more insight to the political ads running from all it’s
+                    platforms
+                    This is partly due to pressure building from users, NGOs, and governmental organization. Below are the
+                    live feed numbers from this to this <a href="https://www.facebook.com/ads/library/report/" target="blank_">Ad Library</a> as of 8/23/2019.
+    
+            </p>
+            <div class="row">
+                <div class="card">
+                    <p class="card-title" >Total ads</p>
+                    <p class="card-text" >4,578,632</p>
+                </div>
+                <div>
+                    <p class="card title">Total Amount spent</p>
+                    <p class="card-text" >$744,617,702</p>
+                </div>
+            </div>
+
         </div>
         <!-- End of page content -->
     </div>

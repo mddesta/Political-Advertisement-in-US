@@ -17,7 +17,7 @@ body {
     perspective: 1500px;
 }
 h6{
-    font-display: bolder;
+    font-weight: bolder;
 }
 
 /* SIDEBAR STYLE */
@@ -130,9 +130,7 @@ ul.CTAs a {
 }
 
 
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
+/* Animation */
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
