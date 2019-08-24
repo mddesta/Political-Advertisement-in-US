@@ -17,11 +17,13 @@ body {
     perspective: 1500px;
 }
 h3{
+    font-family: Trebuchet ;
     font-weight: bolder;
     font-size: 2rem;
     color:#494949;
 }
 h6{
+    font-family: Trebuchet ;
     font-weight: bolder;
     color:#494949;
 }
