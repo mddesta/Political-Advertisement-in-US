@@ -2,7 +2,7 @@
 
 ## Background
 
-Analysis of Political Ads on Facebook to determine trends. Built a machine learning tool that was able to differentiate between organic ads in the US and  those run by the Internet Research Agency (Russian troll farm)
+Analysis of Political Ads on Facebook to determine trends. Built a machine learning tool that was able to differentiate between organic ads in the US and  those run by the Internet Research Agency (Russian troll farm).
 
 
 ## Technologies 
@@ -42,8 +42,8 @@ Analysis of Political Ads on Facebook to determine trends. Built a machine learn
 
 ###### Verision Control:
 
-*Git
-*Github
+* Git
+* Github
 
 ## Visualizations 
 
